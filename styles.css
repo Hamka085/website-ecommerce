@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+    text-transform: capitalize;
+}
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+
+
+.Produk-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 40px;
+}
+
+/* .gambar{
+    width: 40%;
+} */
+
+.gambar img {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 4px;
+  height: 520px;
+  object-fit: cover;
+}
+
+.small-Card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 15px;
+  gap: 12px;
+}
+
+.small-Card img {
+  width: 104px;
+  height: 104px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.small-Card img:active {
+  border: 1px solid #17696a;
+}
+
+.sm-card {
+  border: 2px solid darkred;
+}
+
+.Produk-info{
+  width: 60%;
+}
+.Produk-info h3 {
+  font-size: 32px;
+  font-family: Lato;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.Produk-info h5 {
+  font-size: 24px;
+  font-family: Lato;
+  font-weight: 500;
+  line-height: 130%;
+  color: #ff4242;
+  margin: 6px 0;
+}
+
+.Produk-info del {
+  color: #a9a9a9;
+}
+
+.Produk-info p {
+  color: #424551;
+  margin: 15px 0;
+  width: 70%;
+}
+
+.Ukurans p {
+  font-size: 22px;
+  color: black;
+}
+
+.Ukuran-option {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.kwantitas input {
+  width: 51px;
+  height: 33px;
+  margin-bottom: 15px;
+  padding: 6px;
+}
+
+button {
+  background: #17696a;
+  border-radius: 4px;
+  padding: 10px 37px;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #43e8a9;
+  transition: ease-in 0.4s;
+}
+
+.Pengiriman {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  color: #787a80;
+  font-size: 12px;
+  font-family: Lato;
+  line-height: 150%;
+  letter-spacing: 1px;
+}
+
+hr {
+  color: #787a80;
+  width: 58%;
+  opacity: 0.67;
+}
+
+.pagination {
+    color: #787a80;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .Produk-container{
+    flex-direction: column;
+  }
+  .small-Card img{
+    width: 80px;
+  }
+  .Produk-info{
+    width: 100%;
+  }
+  .Produk-info p{
+    width: 100%;
+  }
+
+  .Pengiriman{
+    width: 100%;
+  }
+
+  hr{
+    width: 100%;
+  }
+}
+
+
+
+
+header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: #116a7b;
+  padding: 15px 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 .80px 16px rgba(0, 0, 0, .1);
+}
+
+header .logo{
+  font-size: 40px;
+  color: #43e8a9;
+  font-weight: bolder;
+}
+
+header .logo span{
+  color: #c2dedc;
+}
+
+header .navbar a{
+  font-size: 20px;
+  padding: 0 30px;
+  color: #e8ded2;
+}  
+
+header .navbar a:hover{
+  color: #43e8a9;
+}
+
+header .icons a{
+  font-size: 30px;
+  color: #e8ded2;
+  margin-left: 24px;
+  padding: 0 5px;
+}
+
+header .icons a:hover{
+  color: #43e8a9;
+}
+
+header #toggler{
+  display: none;
+}
+
+header .fa-bars{
+  font-size: 48px;
+  color: #333;
+  border-radius: .80px;
+  padding: .80px 28px;
+  cursor: pointer;
+  border: 16px solid rgba(0, 0, 0, .3);
+  display: none;
+}
